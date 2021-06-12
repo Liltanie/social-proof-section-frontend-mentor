@@ -10,6 +10,9 @@
 body {
   font-family: "Spartan", sans-serif;
   line-height: 1.6;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 section {
@@ -23,7 +26,6 @@ section {
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 h1, h2, h3, p {
@@ -109,6 +111,11 @@ h1, h2, h3, p {
 }
 
 @media screen and (min-width: 50em) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-size: 50vw, 75vw;
+  }
+
   section {
     width: 90%;
     grid-template-columns: 45% 55%;
