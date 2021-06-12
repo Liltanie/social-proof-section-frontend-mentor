@@ -107,6 +107,27 @@ h1,h2,h3,p{
             }
         }
     }
+}
 
-    
+@media screen and (min-width: 50em) {
+    section{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "statement ratings"
+            "reviews reviews";
+    }
+
+    .statement{
+        grid-area: statement;
+    }
+
+    .ratings{
+        grid-area: ratings;
+    }
+
+    .reviews{
+        grid-area: reviews;
+    }
 }
